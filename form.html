@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #parent{
+         width: 90%;
+         height: auto;
+         margin-left: 2%;
+         margin-top: 5%;
+         background-image: linear-gradient(to right,#05fef6,#d601a4); 
+         padding: 30px;  
+    }
+    #father{
+        width: 80%;
+        margin-left: 10%;
+        background-color: #fff;
+    }
+     h1{
+        text-align: center;
+        
+        /* background:-webkit-linear-gradient(#05fef6,#d601a4);
+         */
+         background-image:linear-gradient( to right, #d601a4,#05fef6,#d601a4,#05fef6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 45px;
+        padding-top: 30px;
+        
+
+    }
+    form{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height:  auto;
+        
+    }
+    input,textarea{
+        width: 100%;
+        margin: 20px auto;
+        border: none;
+        border-bottom: 1px solid #93929287;
+        padding: 10px;
+        outline: none;
+    }
+    input:hover{
+        /* width: 100%; */
+        /* margin: 20px auto; */
+        /* border: none; */
+        border-bottom: 2px solid #05fef6;
+        /* padding: 10px; */
+        /* outline: none; */
+    }
+    .name{
+        display: flex;
+        /* border: 1px solid black; */
+        
+
+    }
+    .email{
+        display: flex;
+    }
+    #message{
+        width: 100%;
+    }
+    .name1{
+        width: 45%;
+    }
+    .email1{
+        width: 45%;
+    }
+    button{
+        padding: 5px 40px;
+        background-image:linear-gradient( to right,#05fef6,#d601a4);
+        color: #fff;
+        font-size: 15px;
+        border: none;
+        
+    
+    
+    }
+    
+</style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="father">
+            <h1>Responsive Contact us Form</h1>
+            <form action="">
+                <div class="name">
+                    <div class="name1" style="margin-right: auto;"> <input type="text" placeholder="First Name"></div>
+                    <div class="name1"> <input type="text" placeholder="Last Name"></div>
+                </div>
+                <div class="email">
+                    <div class="email1"  style="margin-right:auto;"> <input type="text" placeholder="Email Address"></div>
+                    <div class="email1"> <input type="text" placeholder="Website Name"></div>
+                </div>
+                <div  id="message"><input type="text" placeholder="Write Your Message"></div>
+                <button>Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
